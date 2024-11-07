@@ -15,12 +15,12 @@ ul {
 .navi {
     display: flex;
     align-items: center;
-    display: flex;
-    align-items: center;
+    justify-content: center;
 }
 .navili {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 40px;
 }
 .navi .link {
@@ -32,7 +32,7 @@ ul {
     padding: 24px 0;
 }
 .head-link {
-    position: absolute;
+    position: relative;
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -276,7 +276,10 @@ a {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 part-of-list:hover {
-   
+     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+     transform: translateY(0%);
 }
 .list .dscr {
     line-height: 1.5;
@@ -348,10 +351,6 @@ img {
 .four-section-image {
     position: relative;
     overflow: hidden;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
-            transform: translateY(0%);
 }
 .list-four {
     display: flex;
